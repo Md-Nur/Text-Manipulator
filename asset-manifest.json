@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Md-Nur/Text-Manipulator/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/Md-Nur/Text-Manipulator/static/js/main.49266ac3.chunk.js",
+    "main.js.map": "/Md-Nur/Text-Manipulator/static/js/main.49266ac3.chunk.js.map",
+    "runtime-main.js": "/Md-Nur/Text-Manipulator/static/js/runtime-main.85597d02.js",
+    "runtime-main.js.map": "/Md-Nur/Text-Manipulator/static/js/runtime-main.85597d02.js.map",
+    "static/js/2.d8ed7d63.chunk.js": "/Md-Nur/Text-Manipulator/static/js/2.d8ed7d63.chunk.js",
+    "static/js/2.d8ed7d63.chunk.js.map": "/Md-Nur/Text-Manipulator/static/js/2.d8ed7d63.chunk.js.map",
+    "static/js/3.52171960.chunk.js": "/Md-Nur/Text-Manipulator/static/js/3.52171960.chunk.js",
+    "static/js/3.52171960.chunk.js.map": "/Md-Nur/Text-Manipulator/static/js/3.52171960.chunk.js.map",
+    "index.html": "/Md-Nur/Text-Manipulator/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/Md-Nur/Text-Manipulator/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.d8ed7d63.chunk.js.LICENSE.txt": "/Md-Nur/Text-Manipulator/static/js/2.d8ed7d63.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.85597d02.js",
+    "static/js/2.d8ed7d63.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.49266ac3.chunk.js"
+  ]
+}
