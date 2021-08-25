@@ -1,5 +1,4 @@
-// import logo from './logo.svg';
-// import './App.css';
+
 import React, { useState } from 'react'
 import About from './components/About';
 import Alert from './components/Alert';
@@ -18,20 +17,13 @@ function App() {
       document.body.style.color = "white";
       document.body.style.backgroundColor = modeColor;
       showAlert("Change to Dark mode", 'success')
-      // document.title = "Text Manipulator - Dark"
-      // setInterval(() => {
-      //   document.title = "Text Manipulator is amayzing"
-      // }, 1000);
-      // setInterval(() => {
-      //   document.title = "Install Text Manipulator Now!"
-      // }, 1500);
+
     } else {
       setMode("light")
       setModeBtnText("Enable Mode: Dark")
       document.body.style.color = "black";
       document.body.style.backgroundColor = "white";
       showAlert("Change to Light mode", 'success')
-      // document.title = "Text Manipulator - Light"
     }
   }
   const [alert, setAlert] = useState(null)

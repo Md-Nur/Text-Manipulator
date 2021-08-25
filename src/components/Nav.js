@@ -34,26 +34,11 @@ export default function Navbar(props) {
                         </li>
                     </ul>
 
-                    {/* <div className={`mx-2 form-check form-switch text-${props.mode === "dark" ? 'light':'dark'}`}>
-                        <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault1" onClick={() => props.toggleMode("#270606")} />
-                        <label className="form-check-label" htmlFor="flexSwitchCheckDefault1">Red</label>
-                    </div>
-                    <div className={`mx-2 form-check form-switch text-${props.mode === "dark" ? 'light':'dark'}`}>
-                        <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault2" onClick={() => props.toggleMode("#062706")} />
-                        <label className="form-check-label" htmlFor="flexSwitchCheckDefault2">Green</label>
-                    </div>
-                    <div className={`mx-2 form-check form-switch text-${props.mode === "dark" ? 'light':'dark'}`}>
-                        <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault3" onClick={() => props.toggleMode("#1F0627")} />
-                        <label className="form-check-label" htmlFor="flexSwitchCheckDefault3">Purple</label>
-                    </div> */}
                     <div className={`mx-2 form-check form-switch text-${props.mode === "dark" ? 'light' : 'dark'}`}>
                         <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault4" onClick={() => props.toggleMode("#033c61")} />
                         <label className="form-check-label" htmlFor="flexSwitchCheckDefault4">{props.btnMode}</label>
                     </div>
-                    {/* <form className="d-flex">
-                        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button className="btn btn-outline-success" type="submit">Search</button>
-                    </form> */}
+
                 </div>
             </div>
         </nav>

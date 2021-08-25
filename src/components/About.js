@@ -3,30 +3,6 @@ import React from 'react'
 export default function About(props) {
 
 
-    // const [modeStyle, setModeStyle] = useState({
-    //     backgroundColor: "white",
-    //     color: "black"
-    // })
-    // const [modeBtnText, setModeBtnText] = useState("Enable Dark Mode")
-
-    // const modeChange = () => {
-    //     if (modeStyle.color === 'black') {
-    //         setModeStyle({
-    //             backgroundColor: "black",
-    //             color: "white",
-    //             border:"0.4px solid white"
-    //         })
-    //         setModeBtnText("Enable Light Mode")
-    //     } else {
-    //         setModeStyle(
-    //             {
-    //                 backgroundColor: "white",
-    //                 color: "black"
-    //             }
-    //         )
-    //         setModeBtnText("Enable Dark Mode")
-    //     }
-    // }
 let modeStyle = {
     color: props.mode === 'dark'?'white':'black',
     backgroundColor: props.mode === 'dark'?'#bfd1ff45':'white'
