@@ -1,29 +1,40 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
-import {Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 export default function Navbar(props) {
+    const [home, setHome] = useState('active')
+    const [about, setAbout] = useState('')
+
+    const aboutActive = () => {
+        setHome('')
+        setAbout('active')
+    }
+    const homeActive = () => {
+        setHome('active')
+        setAbout('')
+    }
 
     return (
 
         <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
             <div className="container-fluid">
-                <Link className="navbar-brand" to="/">{props.title}</Link>
+                <Link className="navbar-brand" onClick={homeActive} to="/">{props.title}</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+                            <Link className={`nav-link ${home}`} onClick={homeActive} to="/">Home</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/about">{props.aboutText}</Link>
+                            <Link className={`nav-link ${about}`} onClick={aboutActive} to="/about">{props.aboutText}</Link>
                         </li>
                     </ul>
-                    
-                    <div className={`mx-2 form-check form-switch text-${props.mode === "dark" ? 'light':'dark'}`}>
+
+                    {/* <div className={`mx-2 form-check form-switch text-${props.mode === "dark" ? 'light':'dark'}`}>
                         <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault1" onClick={() => props.toggleMode("#270606")} />
                         <label className="form-check-label" htmlFor="flexSwitchCheckDefault1">Red</label>
                     </div>
@@ -34,8 +45,8 @@ export default function Navbar(props) {
                     <div className={`mx-2 form-check form-switch text-${props.mode === "dark" ? 'light':'dark'}`}>
                         <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault3" onClick={() => props.toggleMode("#1F0627")} />
                         <label className="form-check-label" htmlFor="flexSwitchCheckDefault3">Purple</label>
-                    </div>
-                    <div className={`mx-2 form-check form-switch text-${props.mode === "dark" ? 'light':'dark'}`}>
+                    </div> */}
+                    <div className={`mx-2 form-check form-switch text-${props.mode === "dark" ? 'light' : 'dark'}`}>
                         <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault4" onClick={() => props.toggleMode("#033c61")} />
                         <label className="form-check-label" htmlFor="flexSwitchCheckDefault4">{props.btnMode}</label>
                     </div>

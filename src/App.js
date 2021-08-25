@@ -18,7 +18,7 @@ function App() {
       document.body.style.color = "white";
       document.body.style.backgroundColor = modeColor;
       showAlert("Change to Dark mode", 'success')
-      document.title = "Text Manipulator - Dark"
+      // document.title = "Text Manipulator - Dark"
       // setInterval(() => {
       //   document.title = "Text Manipulator is amayzing"
       // }, 1000);
@@ -31,7 +31,7 @@ function App() {
       document.body.style.color = "black";
       document.body.style.backgroundColor = "white";
       showAlert("Change to Light mode", 'success')
-      document.title = "Text Manipulator - Light"
+      // document.title = "Text Manipulator - Light"
     }
   }
   const [alert, setAlert] = useState(null)
@@ -49,15 +49,15 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar title="Text Utils" aboutText="About Us" mode={mode} btnMode={modeBtnText} toggleMode={changeMode} />
+        <Navbar title="Text Utils"  aboutText="About" mode={mode} btnMode={modeBtnText} toggleMode={changeMode} />
         <Alert alert={alert} />
 
         <Switch>
           <Route exact path="/about">
-            <About />
+            <About mode={mode} />
           </Route>
           <Route exact path="/">
-            <TextForm heading="Enter the text to analizy below" mode={mode} showAlert={showAlert} />
+            <TextForm heading="Try Text Manipulator - sentence word counter, charecter counter, email extractor" mode={mode} showAlert={showAlert} />
           </Route>
         </Switch>
       </Router>
