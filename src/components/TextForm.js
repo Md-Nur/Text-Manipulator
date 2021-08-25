@@ -61,11 +61,11 @@ export default function TextForm(props) {
                 <h1 className = "mb-4">{props.heading}</h1>
                 <div className="mb-3">
                     <textarea placeholder="Enter your text" className="form-control" value={text} id="exampleFormControlTextarea1 textBox" onChange={handleOnChange} rows="7" style={{backgroundColor: props.mode === "dark" ? "#bfd1ff45":"white",color: props.mode === "dark" ? "white" : "black"}} ></textarea>
-                    <button type="button" onClick={handleUpClick} className="my-1 mx-1 btn btn-primary">Convert to upper Case</button>
-                    <button type="button" onClick={handleLoClick} className="my-1 mx-1 btn btn-primary">Convert to lower Case</button>
-                    <button type="button" onClick={handleExtractMail} className="my-1 mx-1 btn btn-primary">Find emails from the text</button>
-                    <button type="button" onClick={handleClText} className="my-1 mx-1 btn btn-primary">Clear</button>
-                    <button type="button" onClick={handleCpText} className="my-1 mx-1 btn btn-primary">Copy</button>
+                    <button disabled={text.length === 0} type="button" onClick={handleUpClick} className="my-1 mx-1 btn btn-primary">Convert to upper Case</button>
+                    <button disabled={text.length === 0} type="button" onClick={handleLoClick} className="my-1 mx-1 btn btn-primary">Convert to lower Case</button>
+                    <button disabled={text.length === 0} type="button" onClick={handleExtractMail} className="my-1 mx-1 btn btn-primary">Find emails from the text</button>
+                    <button disabled={text.length === 0} type="button" onClick={handleClText} className="my-1 mx-1 btn btn-primary">Clear</button>
+                    <button disabled={text.length === 0} type="button" onClick={handleCpText} className="my-1 mx-1 btn btn-primary">Copy</button>
 
                 </div>
             </div>
