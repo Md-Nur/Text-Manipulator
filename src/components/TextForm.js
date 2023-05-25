@@ -36,9 +36,9 @@ export default function TextForm(props) {
                     con = true;
                 }
             }
-            if (con && (w[w.length - 4] === '.')) {
-                arr = arr + " " + w
-            }
+//             if (con && (w[w.length - 4] === '.')) {
+//                 arr = arr + " " + w
+//             }
         }
         arr = arr.trim()
         setText(arr);
