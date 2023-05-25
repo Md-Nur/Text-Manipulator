@@ -29,7 +29,7 @@ export default function TextForm(props) {
         let arr = ""
         for (let index = 0; index < newText.length; index++) {
             let w = newText[index];
-            let con = false;
+//             let con = false;
 
             for (let j = 1; j < w.length; j++) {
                 if (w[j] === "@") {
